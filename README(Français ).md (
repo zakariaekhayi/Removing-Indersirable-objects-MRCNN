@@ -73,12 +73,27 @@ Le projet utilise **Mask R-CNN** pour détecter et segmenter les objets dans une
      (monenv)
      ```
 
-### 4. Installer les Dépendances
+### 4. Installer les dépendances  
 
-- Une fois l'environnement activé, installez les dépendances nécessaires à l'aide d'un fichier `requirements.txt` ou manuellement :
-  ```bash
-  pip install tensorflow keras opencv-python numpy matplotlib
-  ```
+- Accédez au dossier **Mask_Rcnn** (celui que vous avez cloné depuis GitHub) :  
+  ```bash  
+  cd Mask_Rcnn  
+  ```  
+- Installez les dépendances à partir du fichier `requirements.txt` :  
+  ```bash  
+  pip install -r requirements.txt  
+  ```  
+- Installez le package :  
+  ```bash  
+  pip install .  
+  ```  
+- Une fois l'environnement activé, installez manuellement les dépendances nécessaires si besoin :  
+  ```bash  
+  pip install tensorflow keras opencv-python numpy matplotlib  
+  ```  
+
+---
+
 
 ### 5. Exécution du Projet
 
