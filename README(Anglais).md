@@ -33,6 +33,7 @@ The project uses **Mask R-CNN** to detect and segment objects in an image. Once 
 
 - Download the **Mask R-CNN** repository from the following link:
   [https://github.com/matterport/Mask\_RCNN.git](https://github.com/matterport/Mask_RCNN.git)
+- deplacer le ficheier clonne dans in the same path
 
 - Extract the contents of the repository and place it **in the same location** as your project's `rcnn.py` file.
 
@@ -67,7 +68,7 @@ The project uses **Mask R-CNN** to detect and segment objects in an image. Once 
    - Choose **"Yes to All"** if prompted.
 
 4. **Activate the Virtual Environment**:
-
+   
    - Run the following command:
      ```bash
      .\myenv\Scripts\Activate
@@ -77,12 +78,26 @@ The project uses **Mask R-CNN** to detect and segment objects in an image. Once 
      (myenv)
      ```
 
-### 4. Install Dependencies
+### 4. Install Dependencies  
 
-- Once the environment is activated, install the required dependencies either from a `requirements.txt` file or manually:
-  ```bash
-  pip install tensorflow keras opencv-python numpy matplotlib
-  ```
+- Navigate to the **Mask_Rcnn** folder (the one you cloned from GitHub):  
+  ```bash  
+  cd Mask_Rcnn  
+  ```  
+- Install dependencies from the `requirements.txt` file:  
+  ```bash  
+  pip install -r requirements.txt  
+  ```  
+- Install the package:  
+  ```bash  
+  pip install .  
+  ```  
+- Once the environment is activated, install the required dependencies manually if necessary:  
+  ```bash  
+  pip install tensorflow keras opencv-python numpy matplotlib  
+  ```  
+
+---
 
 ### 5. Run the Project
 
